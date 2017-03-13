@@ -1,0 +1,21 @@
+---- TimingDelay Matches (4 in 1 files) ----
+Main.c (stm8s_stdperiph_lib\...\tim4_timebase):42
+__IO uint32_t TimingDelay = 0;
+/* Private function prototypes -----------------------------------------------*/
+void Delay(__IO uint32_t nTime);
+Main.c (stm8s_stdperiph_lib\...\tim4_timebase):158
+  TimingDelay = nTime;
+
+  while (TimingDelay != 0);
+}
+
+Main.c (stm8s_stdperiph_lib\...\tim4_timebase):164
+  * @brief  Decrements the TimingDelay variable.
+  * @param  None
+  * @retval None
+Main.c (stm8s_stdperiph_lib\...\tim4_timebase):170
+  if (TimingDelay != 0x00)
+  {
+    TimingDelay--;
+  }
+}
